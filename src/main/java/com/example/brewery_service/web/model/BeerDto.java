@@ -40,9 +40,9 @@ public class BeerDto {
     @JsonFormat(pattern = "yyy-MM-dd'T'HH:MM:ssZ", shape = JsonFormat.Shape.STRING)
     private OffsetDateTime lastModifiedDate;
 
-    @Positive
+
     @NotNull
-    private Long upc;
+    private String upc;
 
     @JsonFormat(shape = JsonFormat.Shape.STRING)
     @Positive

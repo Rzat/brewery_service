@@ -1,5 +1,6 @@
 package com.example.brewery_service.web.controller;
 
+import com.example.brewery_service.bootstrap.BeerLoader;
 import com.example.brewery_service.services.BeerService;
 import com.example.brewery_service.web.model.BeerDto;
 import com.example.brewery_service.web.model.BeerStyleEnum;
@@ -34,7 +35,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 //@AutoConfigureRestDocs(uriScheme = "https", uriHost = "dev.spring.docs", uriPort = 80)
 @AutoConfigureRestDocs
 @WebMvcTest(BeerController.class)
-@ComponentScan(basePackages = "com.example.brewery_service.web.mapper")
+@ComponentScan(basePackages = "com.example.brewery_service.web.controller")
 class BeerControllerTest {
 
     @Autowired
@@ -50,8 +51,8 @@ class BeerControllerTest {
     void getBeerById() throws Exception {
         given(beerService.getById(any())).willReturn(getValidBeerDto());
 
-        mockMvc.perform(get("/api/v1/beer/"+ UUID.randomUUID().toString())
-              //  .param("isCold", "yes")//query param example
+        mockMvc.perform(get("/api/v1/beer/" + UUID.randomUUID().toString())
+                //  .param("isCold", "yes")//query param example
                 .accept(MediaType.APPLICATION_JSON))
                 .andExpect(status().isOk());
 
@@ -100,7 +101,7 @@ class BeerControllerTest {
                 .beerName("My Beer")
                 .beerStyle(BeerStyleEnum.ALE)
                 .price(new BigDecimal("2.99"))
-                .upc(123123123123L)
+                .upc(BeerLoader.BEER_1_UPC)
                 .build();
     }
 }
