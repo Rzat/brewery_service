@@ -2,6 +2,7 @@ package com.example.brewery_service.services;
 
 import com.example.brewery_service.domain.Beer;
 import com.example.brewery_service.repositories.BeerRepository;
+import com.example.brewery_service.web.controller.NotFoundException;
 import com.example.brewery_service.web.mapper.BeerMapper;
 import com.example.brewery_service.web.model.BeerDto;
 import lombok.RequiredArgsConstructor;

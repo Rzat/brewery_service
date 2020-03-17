@@ -11,7 +11,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.restdocs.AutoConfigureRestDocs;
 import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
 import org.springframework.boot.test.mock.mockito.MockBean;
-import org.springframework.context.annotation.ComponentScan;
 import org.springframework.http.MediaType;
 import org.springframework.restdocs.RestDocumentationExtension;
 import org.springframework.test.web.servlet.MockMvc;
@@ -35,7 +34,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 //@AutoConfigureRestDocs(uriScheme = "https", uriHost = "dev.spring.docs", uriPort = 80)
 @AutoConfigureRestDocs
 @WebMvcTest(BeerController.class)
-@ComponentScan(basePackages = "com.example.brewery_service.web.controller")
+//@ComponentScan(basePackages = "com.example.brewery_service.web.controller")
 class BeerControllerTest {
 
     @Autowired
