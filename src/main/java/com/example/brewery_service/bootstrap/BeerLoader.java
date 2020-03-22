@@ -5,6 +5,7 @@ import com.example.brewery_service.repositories.BeerRepository;
 import org.springframework.boot.CommandLineRunner;
 
 import java.math.BigDecimal;
+import java.util.UUID;
 
 //@Component
 public class BeerLoader implements CommandLineRunner {
@@ -12,6 +13,7 @@ public class BeerLoader implements CommandLineRunner {
     public static final String BEER_1_UPC = "123123123123";
     public static final String BEER_2_UPC = "063123456789";
     public static final String BEER_3_UPC = "063123456608";
+    public static final UUID BEER_1_UUID = UUID.fromString("0a818933-087d-47f2-ad83-2f986ed087eb");
 
     private final BeerRepository beerRepositories;
 
