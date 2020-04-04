@@ -4,9 +4,9 @@
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
-        <groupId>bom-springframework</groupId>
-        <artifactId>brewery-bom</artifactId>
-        <version>1.0-SNAPSHOT</version>
+        <groupId>com.github.sfg-beer-works</groupId>
+        <artifactId>sfg-brewery-bom</artifactId>
+        <version>1.0.7</version>
     </parent>
     <groupId>com.example</groupId>
     <artifactId>brewery_service</artifactId>
