@@ -1,4 +1,4 @@
-package com.example.brewery_service.services;
+package com.example.brewery_service.services.brewing;
 
 import com.example.brewery_service.config.JmsConfig;
 import com.example.brewery_service.domain.Beer;
