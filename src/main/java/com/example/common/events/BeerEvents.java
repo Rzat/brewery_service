@@ -1,4 +1,4 @@
-package com.example.brewery_service.events;
+package com.example.common.events;
 
 import com.example.brewery_service.web.model.BeerDto;
 import lombok.AllArgsConstructor;

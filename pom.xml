@@ -3,11 +3,18 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
+    <!-- <parent>
+         <groupId>com.github.sfg-beer-works</groupId>
+         <artifactId>sfg-brewery-bom</artifactId>
+         <version>1.0.7</version>
+     </parent>-->
+
     <parent>
-        <groupId>com.github.sfg-beer-works</groupId>
-        <artifactId>sfg-brewery-bom</artifactId>
-        <version>1.0.7</version>
+        <groupId>bom-springframework</groupId>
+        <artifactId>brewery-bom</artifactId>
+        <version>1.0-SNAPSHOT</version>
     </parent>
+
     <groupId>com.example</groupId>
     <artifactId>brewery_service</artifactId>
     <version>0.0.1-SNAPSHOT</version>
@@ -21,6 +28,10 @@
             <scope>test</scope>
         </dependency>
         <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
+        </dependency>
+        <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-cache</artifactId>
         </dependency>
@@ -31,6 +42,12 @@
         <dependency>
             <groupId>org.ehcache</groupId>
             <artifactId>ehcache</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-commons</artifactId>
+            <version>2.2.4.RELEASE</version>
+            <scope>compile</scope>
         </dependency>
     </dependencies>
 </project>

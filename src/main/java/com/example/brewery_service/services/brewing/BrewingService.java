@@ -2,10 +2,10 @@ package com.example.brewery_service.services.brewing;
 
 import com.example.brewery_service.config.JmsConfig;
 import com.example.brewery_service.domain.Beer;
-import com.example.brewery_service.events.BrewBeerEvent;
 import com.example.brewery_service.repositories.BeerRepository;
 import com.example.brewery_service.services.inventory.BeerInventoryService;
 import com.example.brewery_service.web.mapper.BeerMapper;
+import com.example.common.events.BrewBeerEvent;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.jms.core.JmsTemplate;
