@@ -3,18 +3,19 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <!-- <parent>
-         <groupId>com.github.sfg-beer-works</groupId>
-         <artifactId>sfg-brewery-bom</artifactId>
-         <version>1.0.7</version>
-     </parent>-->
-
     <parent>
+        <groupId>com.github.sfg-beer-works</groupId>
+        <artifactId>sfg-brewery-bom</artifactId>
+        <version>1.0.7</version>
+    </parent>
+
+    <!--<parent>
         <groupId>bom-springframework</groupId>
         <artifactId>brewery-bom</artifactId>
         <version>1.0-SNAPSHOT</version>
     </parent>
 
+    -->
     <groupId>com.example</groupId>
     <artifactId>brewery_service</artifactId>
     <version>0.0.1-SNAPSHOT</version>
