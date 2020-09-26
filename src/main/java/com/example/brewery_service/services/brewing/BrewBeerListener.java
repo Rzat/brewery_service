@@ -41,7 +41,7 @@ public class BrewBeerListener {
           jmsTemplate.convertAndSend(JmsConfig.NEW_INVENTORY_QUEUE, newInventoryEvent);
       }
       */
-    
+
     @Transactional
     @JmsListener(destination = JmsConfig.BREWING_REQUEST_QUEUE)
     public void listen2(String string) {
